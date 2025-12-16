@@ -1,0 +1,28 @@
+{
+  "name": "apex_pmd",
+  "version": "3.7.0",
+  "description": "Apex_PMD",
+  "author": "Flosum",
+  "dependencies": {
+    "express": "^4.21.2",
+    "adm-zip": "^0.5.9",
+    "http": "0.0.0",
+    "jsforce": "^3.1.0",
+    "dotenv": "10.0.0"
+  },
+
+  "files": [
+    "/dist"
+  ],
+  "license": "BSD",
+  "main": "index.js",
+  "pmd": {
+    "version": "7.16.0"
+  },
+  "scripts": {
+    "test": "bash test.sh",
+    "start": "node index.js",
+    "build-version": "npm install && bash build-version.sh",
+    "dev": "node -r dotenv/config index.js"
+  }
+}
